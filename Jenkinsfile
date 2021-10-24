@@ -15,9 +15,8 @@ pipeline{
                 expression { "${env.RESP_BUILD}" == 'Sim' }
         }
             steps {
-                echo 'O Deploy será realizado'
-                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') {
-                    sh 'npm config ls'
+                 echo 'O Deploy será realizado'
+                 sh 'npm install'
                 }
             }
         }
