@@ -17,7 +17,7 @@ pipeline{
             steps {
                  echo 'O Deploy será realizado'
                  sh 'npm install'
-                }
+      
             }
         }
         stage ('Deploy Cancelado'){
