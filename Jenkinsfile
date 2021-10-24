@@ -15,9 +15,8 @@ pipeline{
                 expression { "${env.RESP_BUILD}" == 'Sim' }
         }
             steps {
-                 echo 'O Deploy será realizado'
-                 sh 'npm install'
-      
+                echo 'O Deploy será realizado'
+                sh 'npm install'
             }
         }
         stage ('Deploy Cancelado'){
@@ -29,4 +28,4 @@ pipeline{
             }
         }
     }
-
+}
