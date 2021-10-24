@@ -16,7 +16,9 @@ pipeline{
         }
             steps {
                 echo 'O Deploy será realizado'
-                sh 'npm install'
+                nodejs(nodeJSInstallationName: 'Node 6.x', configId: '<config-file-provider-id>') {
+                    sh 'npm config ls'
+                }
             }
         }
         stage ('Deploy Cancelado'){
